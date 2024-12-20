@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | SoulTravel</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+
+      nav {
+        background-color: #004aad;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+      }
+
+      .nav__logo a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .nav__logo span {
+        color: #ffce00;
+      }
+
+      .nav__links li {
+        display: inline;
+        margin: 0 1rem;
+      }
+
+      .nav__links a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+      }
+
+      .nav__links a:hover {
+        color: #ffce00;
+      }
+
+      .btn {
+        background-color: #ffce00;
+        color: #004aad;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #ffb000;
+      }
+
+      .header__container {
+        text-align: center;
+        padding: 2rem;
+        background: linear-gradient(to bottom, #004aad, #0074e8);
+        color: #fff;
+      }
+
+      .header__content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .header__content h1 span {
+        color: #ffce00;
+      }
+
+      .header__content p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .header__image img {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        margin: 1rem auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .header__image__card {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #004aad;
+        border-radius: 10px;
+        padding: 1rem;
+        display: inline-block;
+        margin: 0.5rem;
+      }
+
+      .input__row {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .input__group h5 {
+        margin-bottom: 0.5rem;
+      }
+
+      .input__group div {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+
+      .input__group input {
+        border: none;
+        outline: none;
+        margin-left: 0.5rem;
+      }
+
+      .bar {
+        margin-top: 2rem;
+        background-color: #003b82;
+        color: #fff;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      button[type="submit"] {
+        background-color: #ffce00;
+        color: #004aad;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #ffb000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Soul<span>Travel</span>.</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Package</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn sign__up">Sign Up</button>
+        <button class="btn sign__in">Sign In</button>
+      </div>
+    </nav>
+    <header class="header__container">
+      <div class="header__content">
+        <h1>LET'S GO!<br />THE <span>ADVENTURE</span> IS WAITING FOR YOU</h1>
+        <p>
+          Embark on Your Journey Today and Discover Uncharted Wonders Around the
+          World - Your Adventure Awaits with Exciting Experiences, Unforgettable
+          Memories, and Endless Opportunities
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Destination</h5>
+              <div>
+                <span><i class="ri-map-pin-line"></i></span>
+                <input type="text" placeholder="Paris, France" />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Date</h5>
+              <div>
+                <span><i class="ri-calendar-2-line"></i></span>
+                <input type="text" placeholder="17 July 2024" />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <div class="bar">
+          Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+      </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
